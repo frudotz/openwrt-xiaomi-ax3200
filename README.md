@@ -60,9 +60,9 @@ Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemen
 
 ### 📦 Gereksinimler
 
-- [Python (3.x)](https://www.python.org/downloads/)  
-- `requests` paketi (`pip` paket yöneticisi üzerinden)  
-- [PuTTY](https://www.putty.org/) (Windows için SSH istemcisi)  
+- [Python (3.x)](https://www.python.org/downloads/) (`winget install Python.Python.3.13`)  
+- `requests` paketi (`pip install requests`)  
+- [PuTTY](https://www.putty.org/) (`winget install PuTTY.PuTTY`)  
 - Xmir Patcher aracı ([Releases](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip) dosyasında)  
 
 ## 📥 Kurulum dosyalarını [indirmek için tıklayın.](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip)  
