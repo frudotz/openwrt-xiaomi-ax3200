@@ -4,9 +4,9 @@ Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemen
 *OpenWRT kurulumu cihazınızı garanti dışı bırakabilir, oluşabilecek tüm komplikasyonlar sizin sorumluluğunuzdadır.*  
 *Konu ile ilgili hiçbir sorumluluk kabul etmiyoruz. Rehberimizi kaynak göstererek paylaşmanız önemle rica olunur.* 🙏
 
-### 📥 Kurulum dosyalarını [indirmek için tıklayın.](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip)  
+# ✨ Başlarken
 
-# ⚙️ Cihaz Özellikleri
+### ⚙️ Cihaz Özellikleri
 - CPU: 1350 Mhz MediaTek MT7622B
 - RAM: 256 MB
 - FLASH: 128 MB
@@ -14,14 +14,18 @@ Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemen
 - 5 GHz: MediaTek MT7915E
 - Ethernet: 4x1000 Mbps LAN/WAN
 
-# 💻 Gereksinimler
+### 💻 Gereksinimler
 
 - [Python (3.x)](https://www.python.org/downloads/)  
 - `requests` paketi (`pip` paket yöneticisi üzerinden)  
 - [PuTTY](https://www.putty.org/) (Windows için SSH istemcisi)  
 - Xmir Patcher aracı ([Releases](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip) dosyasında)  
 
-# 🔓 Unlock Script (MiWiFi Root Erişimi)
+## 📥 Kurulum dosyalarını [indirmek için tıklayın.](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip)  
+
+# 🪄 Kuruluma Hazırlık
+
+### 🔓 Unlock Script (MiWiFi Root Erişimi)
 
 Python'u sisteminize indirin ve kurun: [https://www.python.org/downloads/](https://www.python.org/downloads/)  
 Kurulum dosyalarını içeren `.zip` arşivini kolay erişilebilir bir dizine çıkartın.  
@@ -33,7 +37,7 @@ pip install requests
 python unlock.py -p ARAYUZ_SIFRESI
 ```
 
-# 🪲 Xmir Patcher ile Exploit Yükleme
+### 🪲 Xmir Patcher ile Exploit Yükleme
 
 Xmir Patcher’ı bir klasöre ayıklayın ve `START.bat` dosyasını çalıştırın.  
 - Açılan menüden `2 - Connect to device (install exploit)` seçeneğini seçin.
@@ -45,14 +49,16 @@ Aşağıdaki mesajı gördüğünüzde işlem başarıyla tamamlanmıştır:
 SSH and Telnet services are activated!
 ```
 
-# 🔗 SSH ile Cihaza Erişim
+# 🚀 OpenWRT Kurulumu - [İndir](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip)
+
+### 🔗 SSH ile Cihaza Erişim
 
 PuTTY veya terminal üzerinden aşağıdaki komutla cihaza bağlanın:
 
 - **Kullanıcı adı:** `root`
 - **Şifre:** `root`
 
-# 🛜 Yerel HTTP Sunucusu Başlatma
+### 🛜 Yerel HTTP Sunucusu Başlatma
 
 Kurulum dosyalarının bulunduğu dizinde terminal açın.
 Aşağıdaki komutu çalıştırarak yerel bir HTTP sunucusu başlatın:
@@ -69,7 +75,7 @@ ipconfig
 
 > **Not:** IP adresiniz genelde `192.168.31.xxx` şeklindedir.
 
-# 📤 OpenWRT Flashlama
+### 📤 OpenWRT Flashlama
 
 SSH bağlantısı üzerinden aşağıdaki komutları girin:
 
@@ -81,20 +87,20 @@ mtd -r write immo.bin firmware
 
 > `immo.bin` dosyası, sizin için önceden hazırlanmıştır ve kurulum arşivinin içindedir.
 
-# ⏩ Kurulum Sonrası
+### ⏩ Kurulum Sonrası
 
 Cihaz yeniden başladıktan sonra arayüze erişemiyorsanız, kurulum işlemlerini **baştan uygulayın** ve yukarıdaki `mtd` komutlarını tekrar çalıştırın.
 
 > Bu aşamada yüklenen sistem **factory** modundadır ve geçicidir.
 
-# 🛠️ Kalıcı Firmware (Sysupgrade) Yükleme
+### 🛠️ Kalıcı Firmware (Sysupgrade) Yükleme
 
 Cihaz açıldıktan sonra web arayüzüne girin:
 
 - `System > Backup / Flash Firmware` menüsüne gidin.
 - Sağlanan `sysupgrade.bin` dosyasını yükleyin.
 
-# 📝 Notlar
+### 📝 Notlar
 
 - İşlem sırasında cihazın **fişini çekmeyin**.
 - İşlemler arasında cihazın IP adresi değişebilir, kontrol etmeyi unutmayın.
@@ -104,7 +110,7 @@ Cihaz açıldıktan sonra web arayüzüne girin:
 
 Kurulum başarıyla tamamlandığında cihazınız artık ImmortalWRT ile çalışıyor olacaktır. 🎉
 
-# 🗃️ Kaynaklar
+### 🗃️ Kaynaklar
   - [OpenWRT Wiki](https://openwrt.org/toh/xiaomi/ax3200)  
    
 -----------
