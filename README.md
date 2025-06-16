@@ -26,6 +26,7 @@ Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemen
       <ul>
         <li><a href="#-ssh-ile-cihaza-erişim">📡 SSH ile Cihaza Erişim</a></li>
         <li><a href="#-yerel-http-sunucusu-başlatma">🖥️ Yerel HTTP Sunucusu Başlatma</a></li>
+        <li><a href="#-erken-kurulum-ayarları">📇 Erken Kurulum Ayarları</a></li>
         <li><a href="#-openwrt-flashlama">🔁 OpenWRT Flashlama</a></li>
       </ul>
     </li>
@@ -53,7 +54,7 @@ Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemen
 - 5 GHz: MediaTek MT7915E
 - Ethernet: 4x1000 Mbps LAN/WAN
 
-### 💻 Gereksinimler
+### 📦 Gereksinimler
 
 - [Python (3.x)](https://www.python.org/downloads/)  
 - `requests` paketi (`pip` paket yöneticisi üzerinden)  
@@ -76,7 +77,7 @@ pip install requests
 python unlock.py -p ARAYUZ_SIFRESI
 ```
 
-### 🪲 Xmir Patcher ile Exploit Yükleme
+### 💥 Xmir Patcher ile Exploit Yükleme
 
 Xmir Patcher’ı bir klasöre ayıklayın ve `START.bat` dosyasını çalıştırın.  
 - Açılan menüden `2 - Connect to device (install exploit)` seçeneğini seçin.
@@ -90,14 +91,14 @@ SSH and Telnet services are activated!
 
 # 🚀 OpenWRT Kurulumu - [İndir](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip)
 
-### 🔗 SSH ile Cihaza Erişim
+### 📡 SSH ile Cihaza Erişim
 
 PuTTY veya terminal üzerinden aşağıdaki komutla cihaza bağlanın:
 
 - **Kullanıcı adı:** `root`
 - **Şifre:** `root`
 
-### 🛜 Yerel HTTP Sunucusu Başlatma
+### 🖥️ Yerel HTTP Sunucusu Başlatma
 
 Kurulum dosyalarının bulunduğu dizinde terminal açın.
 Aşağıdaki komutu çalıştırarak yerel bir HTTP sunucusu başlatın:
@@ -114,7 +115,30 @@ ipconfig
 
 > **Not:** IP adresiniz genelde `192.168.31.xxx` şeklindedir.
 
-### 📤 OpenWRT Flashlama
+### 📇 Erken Kurulum Ayarları
+
+SSH bağlantısı üzerinden aşağıdaki komutları girin:
+
+```bash
+nvram set ssh_en=1
+nvram set uart_en=1
+nvram set boot_wait=on
+nvram set flag_boot_success=1
+nvram set flag_try_sys1_failed=0
+nvram set flag_try_sys2_failed=0
+nvram commit
+```
+
+> Eğer OpenWRT flashlama adımından sonra cihazı yeniden başlattığınızda arayüze erişemiyorsanız  
+> Kuruluma baştan başlayıp aşağıdaki kodları da ekleyerek girmeyi deneyebilirsiniz. 
+
+```bash
+nvram set flag_ota_reboot=1
+nvram set "boot_fw1=run boot_rd_img;bootm"
+nvram commit
+```
+
+### 🔁 OpenWRT Flashlama
 
 SSH bağlantısı üzerinden aşağıdaki komutları girin:
 
@@ -126,13 +150,13 @@ mtd -r write immo.bin firmware
 
 > `immo.bin` dosyası, sizin için önceden hazırlanmıştır ve kurulum arşivinin içindedir.
 
-# ⏩ Kurulum Sonrası
+# 💾 Kurulum Sonrası
 
 Cihaz yeniden başladıktan sonra arayüze erişemiyorsanız, kurulum işlemlerini **baştan uygulayın** ve yukarıdaki `mtd` komutlarını tekrar çalıştırın.
 
 > Bu aşamada yüklenen sistem **factory** modundadır ve geçicidir.
 
-### 🛠️ Kalıcı Firmware (Sysupgrade) Yükleme
+### 📌 Kalıcı Firmware (Sysupgrade) Yükleme
 
 Cihaz açıldıktan sonra web arayüzüne girin:
 
