@@ -4,6 +4,8 @@ Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemen
 *OpenWRT kurulumu cihazınızı garanti dışı bırakabilir, oluşabilecek tüm komplikasyonlar sizin sorumluluğunuzdadır.*  
 *Konu ile ilgili hiçbir sorumluluk kabul etmiyoruz. Rehberimizi kaynak göstererek paylaşmanız önemle rica olunur.* 🙏
 
+### 📥 Kurulum dosyalarını [indirmek için tıklayın.](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip)  
+
 # ⚙️ Cihaz Özellikleri
 - CPU: 1350 Mhz MediaTek MT7622B
 - RAM: 256 MB
@@ -17,7 +19,7 @@ Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemen
 - [Python (3.x)](https://www.python.org/downloads/)  
 - `requests` paketi (`pip` paket yöneticisi üzerinden)  
 - [PuTTY](https://www.putty.org/) (Windows için SSH istemcisi)  
-- Xmir Patcher aracı (Releases dosyasında)  
+- Xmir Patcher aracı ([Releases](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip) dosyasında)  
 
 # 🔓 Unlock Script (MiWiFi Root Erişimi)
 
