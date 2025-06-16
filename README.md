@@ -4,6 +4,45 @@ Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemen
 *OpenWRT kurulumu cihazınızı garanti dışı bırakabilir, oluşabilecek tüm komplikasyonlar sizin sorumluluğunuzdadır.*  
 *Konu ile ilgili hiçbir sorumluluk kabul etmiyoruz. Rehberimizi kaynak göstererek paylaşmanız önemle rica olunur.* 🙏
 
+<details>
+  <summary>İçindekiler</summary>
+  <ol>
+    <li>
+      <a href="#-başlarken">✨ Başlarken</a>
+      <ul>
+        <li><a href="#️-cihaz-özellikleri">⚙️ Cihaz Özellikleri</a></li>
+        <li><a href="#-gereksinimler">📦 Gereksinimler</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#-kuruluma-hazırlık">🪄 Kuruluma Hazırlık</a>
+      <ul>
+        <li><a href="#-unlock-script-miwifi-root-erişimi">🔓 Unlock Script (MiWiFi Root Erişimi)</a></li>
+        <li><a href="#-xmir-patcher-ile-exploit-yükleme">💥 Xmir Patcher ile Exploit Yükleme</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#-openwrt-kurulumu---i̇ndir">🚀 OpenWRT Kurulumu</a>
+      <ul>
+        <li><a href="#-ssh-ile-cihaza-erişim">📡 SSH ile Cihaza Erişim</a></li>
+        <li><a href="#-yerel-http-sunucusu-başlatma">🖥️ Yerel HTTP Sunucusu Başlatma</a></li>
+        <li><a href="#-openwrt-flashlama">🔁 OpenWRT Flashlama</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#-kurulum-sonrası">💾 Kurulum Sonrası</a>
+      <ul>
+        <li><a href="#️-kalıcı-firmware-sysupgrade-yükleme">📌 Kalıcı Firmware (sysupgrade) Yükleme</a></li>
+        <li><a href="#-notlar">📝 Notlar</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#️-kaynaklar">🗃️ Kaynaklar</a>
+    </li>
+  </ol>
+</details>
+
+
 # ✨ Başlarken
 
 ### ⚙️ Cihaz Özellikleri
@@ -87,7 +126,7 @@ mtd -r write immo.bin firmware
 
 > `immo.bin` dosyası, sizin için önceden hazırlanmıştır ve kurulum arşivinin içindedir.
 
-### ⏩ Kurulum Sonrası
+# ⏩ Kurulum Sonrası
 
 Cihaz yeniden başladıktan sonra arayüze erişemiyorsanız, kurulum işlemlerini **baştan uygulayın** ve yukarıdaki `mtd` komutlarını tekrar çalıştırın.
 
@@ -110,7 +149,7 @@ Cihaz açıldıktan sonra web arayüzüne girin:
 
 Kurulum başarıyla tamamlandığında cihazınız artık ImmortalWRT ile çalışıyor olacaktır. 🎉
 
-### 🗃️ Kaynaklar
+# 🗃️ Kaynaklar
   - [OpenWRT Wiki](https://openwrt.org/toh/xiaomi/ax3200)  
    
 -----------
