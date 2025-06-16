@@ -111,7 +111,7 @@ SSH and Telnet services are activated!
 
 ### 📡 SSH ile Cihaza Erişim
 
-PuTTY veya terminal üzerinden aşağıdaki komutla cihaza bağlanın:
+PuTTY veya terminal üzerinden aşağıdaki giriş bilgilerini kullanarak cihaza bağlanın:
 
 - **Kullanıcı adı:** `root`
 - **Şifre:** `root`
