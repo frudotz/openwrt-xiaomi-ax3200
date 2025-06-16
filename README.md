@@ -223,10 +223,10 @@ fw_setenv flag_last_success 1
 
 Kodları girdikten sonra OpenWRT web arayüzüne girin:
 
+#### Sysupgrade dosyasını [indirmek için tıklayın.](https://downloads.immortalwrt.org/releases/24.10.1/targets/mediatek/mt7622/immortalwrt-24.10.1-mediatek-mt7622-xiaomi_redmi-router-ax6s-squashfs-sysupgrade.itb)  
+
 - `System > Backup / Flash Firmware` menüsüne gidin.
 - `immortalwrt-24.10.1-mediatek-mt7622-xiaomi_redmi-router-ax6s-squashfs-sysupgrade.itb` dosyasını yükleyin.
-
-## 💠 Sysupgrade dosyasını [indirmek için tıklayın.](https://downloads.immortalwrt.org/releases/24.10.1/targets/mediatek/mt7622/immortalwrt-24.10.1-mediatek-mt7622-xiaomi_redmi-router-ax6s-squashfs-sysupgrade.itb)  
 
 <p align="left">
   <img width="auto" height="147" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/14.png">
