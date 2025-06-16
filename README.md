@@ -31,7 +31,7 @@ Bu rehberimizde Xiaomi AX3200 cihazınıza OpenWRT yüklemeniz için izlemeniz g
         <li><a href="#-ssh-ile-cihaza-erişim">📡 SSH ile Cihaza Erişim</a></li>
         <li><a href="#-yerel-http-sunucusu-başlatma">🖥️ Yerel HTTP Sunucusu Başlatma</a></li>
         <li><a href="#-erken-kurulum-ayarları">📇 Erken Kurulum Ayarları</a></li>
-        <li><a href="#-openwrt-flashlama">🔁 OpenWRT Flashlama</a></li>
+        <li><a href="#-openwrt-flashlama">⚡ OpenWRT Flashlama</a></li>
       </ul>
     </li>
     <li>
@@ -169,7 +169,7 @@ nvram commit
   <img width="auto" height="250" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/9.png">
 </p>
 
-### 🔁 OpenWRT Flashlama
+### ⚡ OpenWRT Flashlama
 
 SSH bağlantısı üzerinden aşağıdaki komutları girin:
 
