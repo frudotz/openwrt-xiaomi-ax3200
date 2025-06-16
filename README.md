@@ -152,24 +152,44 @@ mtd -r write immo.bin firmware
 
 # 💾 Kurulum Sonrası
 
-Cihaz yeniden başladıktan sonra arayüze erişemiyorsanız, kurulum işlemlerini **baştan uygulayın** ve yukarıdaki `mtd` komutlarını tekrar çalıştırın.
+Cihaz yeniden başladıktan sonra arayüze erişemiyorsanız,  
+Kurulum işlemlerini **baştan uygulayın** ve yukarıdaki `mtd` komutlarını tekrar çalıştırın.
 
 > Bu aşamada yüklenen sistem **factory** modundadır ve geçicidir.
 
 ### 📌 Kalıcı Firmware (Sysupgrade) Yükleme
 
-Cihaz açıldıktan sonra web arayüzüne girin:
+Cihaz OpenWRT'den açıldığında öncelikle cihaza tekrar SSH ile bağlanarak aşağıdaki komutları girin:
+
+```bash
+fw_setsys telnet_en 1
+fw_setsys ssh_en 1
+fw_setsys uart_en 1
+fw_setsys boot_wait on
+fw_setenv telnet_en 1
+fw_setenv ssh_en 1
+fw_setenv uart_en 1
+fw_setenv boot_wait on
+fw_setenv bootdelay 5
+fw_setenv bootmenu_delay 30
+fw_setenv boot_fw1 "run boot_rd_img; bootm"
+fw_setenv flag_try_sys1_failed 8
+fw_setenv flag_try_sys2_failed 8
+fw_setenv flag_boot_rootfs 0
+fw_setenv flag_boot_success 1
+fw_setenv flag_last_success 1
+```
+
+Kodları girdikten sonra OpenWRT web arayüzüne girin:
 
 - `System > Backup / Flash Firmware` menüsüne gidin.
-- Sağlanan `sysupgrade.bin` dosyasını yükleyin.
+- `immortalwrt-24.10.1-mediatek-mt7622-xiaomi_redmi-router-ax6s-squashfs-sysupgrade.itb` dosyasını yükleyin.
 
 ### 📝 Notlar
 
-- İşlem sırasında cihazın **fişini çekmeyin**.
+- İşlem sırasında cihazı **fişten çekmeyin.**
 - İşlemler arasında cihazın IP adresi değişebilir, kontrol etmeyi unutmayın.
 - Tüm işlemlerden önce cihazın arayüz şifresini bildiğinizden emin olun.
-
----
 
 Kurulum başarıyla tamamlandığında cihazınız artık ImmortalWRT ile çalışıyor olacaktır. 🎉
 
