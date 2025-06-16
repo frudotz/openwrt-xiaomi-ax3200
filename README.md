@@ -81,6 +81,12 @@ pip install requests
 python unlock.py -p ARAYUZ_SIFRESI
 ```
 
+<p align="left">
+  <img width="auto" height="147" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/1.png">
+  <img width="auto" height="147" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/2.png">
+  <img width="auto" height="147" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/3.png">
+</p>
+
 ### 💥 Xmir Patcher ile Exploit Yükleme
 
 Xmir Patcher’ı bir klasöre ayıklayın ve `START.bat` dosyasını çalıştırın.  
@@ -93,6 +99,11 @@ Aşağıdaki mesajı gördüğünüzde işlem başarıyla tamamlanmıştır:
 SSH and Telnet services are activated!
 ```
 
+<p align="left">
+  <img width="auto" height="222" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/4.png">
+  <img width="auto" height="222" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/5.png">
+</p>
+
 # 🚀 OpenWRT Kurulumu - [İndir](https://github.com/frudotz/openwrt-xiaomi-ax3200/releases/download/OpenWRTKurulum/ax3200-mt7622b-openwrt-kurulum.zip)
 
 ### 📡 SSH ile Cihaza Erişim
@@ -102,6 +113,10 @@ PuTTY veya terminal üzerinden aşağıdaki komutla cihaza bağlanın:
 - **Kullanıcı adı:** `root`
 - **Şifre:** `root`
 
+<p align="left">
+  <img width="auto" height="350" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/7.png">
+</p>
+
 ### 🖥️ Yerel HTTP Sunucusu Başlatma
 
 Kurulum dosyalarının bulunduğu dizinde terminal açın.
@@ -110,6 +125,10 @@ Aşağıdaki komutu çalıştırarak yerel bir HTTP sunucusu başlatın:
 ```bash
 python -m http.server
 ```
+
+<p align="left">
+  <img width="auto" height="350" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/6.png">
+</p>
 
 Yeni bir terminal açın ve aşağıdaki komutla IP adresinizi öğrenin:
 
@@ -142,6 +161,11 @@ nvram set "boot_fw1=run boot_rd_img;bootm"
 nvram commit
 ```
 
+<p align="left">
+  <img width="auto" height="250" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/8.png">
+  <img width="auto" height="250" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/9.png">
+</p>
+
 ### 🔁 OpenWRT Flashlama
 
 SSH bağlantısı üzerinden aşağıdaki komutları girin:
@@ -153,6 +177,11 @@ mtd -r write immo.bin firmware
 ```
 
 > `immo.bin` dosyası, sizin için önceden hazırlanmıştır ve kurulum arşivinin içindedir.
+
+<p align="left">
+  <img width="auto" height="250" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/10.png">
+  <img width="auto" height="250" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/11.png">
+</p>
 
 # 💾 Kurulum Sonrası
 
@@ -184,10 +213,21 @@ fw_setenv flag_boot_success 1
 fw_setenv flag_last_success 1
 ```
 
+<p align="left">
+  <img width="auto" height="222" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/12.png">
+  <img width="auto" height="222" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/13.png">
+</p>
+
 Kodları girdikten sonra OpenWRT web arayüzüne girin:
 
 - `System > Backup / Flash Firmware` menüsüne gidin.
 - `immortalwrt-24.10.1-mediatek-mt7622-xiaomi_redmi-router-ax6s-squashfs-sysupgrade.itb` dosyasını yükleyin.
+
+<p align="left">
+  <img width="auto" height="147" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/14.png">
+  <img width="auto" height="147" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/15.png">
+  <img width="auto" height="147" src="https://github.com/frudotz/openwrt-xiaomi-ax3200/blob/main/IMGs/16.png">
+</p>
 
 ### 📝 Notlar
 
