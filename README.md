@@ -69,6 +69,9 @@ Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemen
 
 # 🪄 Kuruluma Hazırlık
 
+Öncelikle OpenWRT kurulumuna başlamadan önce MiWifi kurulumunu tamamlamanız gerekmektedir.  
+> Kurulum sırasında kolay bir arayüz şifresi belirleyebilirsiniz. (Örn. 123456789)  
+
 ### 🔓 Unlock Script (MiWiFi Root Erişimi)
 
 Python'u sisteminize indirin ve kurun: [https://www.python.org/downloads/](https://www.python.org/downloads/)  
