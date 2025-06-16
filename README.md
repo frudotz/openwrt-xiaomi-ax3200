@@ -1,6 +1,6 @@
 # Xiaomi AX3200 için Türkçe OpenWRT Kurulum Rehberi
 
-Rehberimizdeki yöntem ile AX3200 cihazınıza OpenWRT yüklemeniz için izlemeniz gereken adımlar yer almaktadır.  
+Bu rehberimizde Xiaomi AX3200 cihazınıza OpenWRT yüklemeniz için izlemeniz gereken tüm adımlar yer almaktadır.    
 *OpenWRT kurulumu cihazınızı garanti dışı bırakabilir, oluşabilecek tüm komplikasyonlar sizin sorumluluğunuzdadır.*  
 *Konu ile ilgili hiçbir sorumluluk kabul etmiyoruz. Rehberimizi kaynak göstererek paylaşmanız önemle rica olunur.* 🙏
 
