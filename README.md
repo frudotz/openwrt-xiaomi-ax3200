@@ -242,6 +242,11 @@ Kodları girdikten sonra OpenWRT web arayüzüne girin:
 
 Kurulum başarıyla tamamlandığında cihazınız artık ImmortalWRT ile çalışıyor olacaktır. 🎉
 
+### 🫠 Sorun Giderme
+
+- [#1: ImmortalWRT kurulumu sonrası internet bağlantı sorunu](https://github.com/frudotz/openwrt-xiaomi-ax3200/issues/1)
+- [#2: ImmortalWRT hantal opkg paket sunucuları](https://github.com/frudotz/openwrt-xiaomi-ax3200/issues/2)
+
 # 🗃️ Kaynaklar
   - [OpenWRT Wiki](https://openwrt.org/toh/xiaomi/ax3200)  
    
