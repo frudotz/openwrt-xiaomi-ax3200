@@ -42,7 +42,7 @@ Bu rehberimizde Xiaomi AX3200 cihazınıza OpenWRT yüklemeniz için izlemeniz g
       </ul>
     </li>
     <li>
-      <a href="#️-sorun-giderme">🫠 Sorun Giderme</a>
+      <a href="#-sorun-giderme">🫠 Sorun Giderme</a>
     </li>
     <li>
       <a href="#️-kaynaklar">🗃️ Kaynaklar</a>
