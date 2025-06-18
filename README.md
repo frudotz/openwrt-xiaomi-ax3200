@@ -42,6 +42,9 @@ Bu rehberimizde Xiaomi AX3200 cihazınıza OpenWRT yüklemeniz için izlemeniz g
       </ul>
     </li>
     <li>
+      <a href="#️-sorun-giderme">🫠 Sorun Giderme</a>
+    </li>
+    <li>
       <a href="#️-kaynaklar">🗃️ Kaynaklar</a>
     </li>
   </ol>
@@ -242,7 +245,7 @@ Kodları girdikten sonra OpenWRT web arayüzüne girin:
 
 Kurulum başarıyla tamamlandığında cihazınız artık ImmortalWRT ile çalışıyor olacaktır. 🎉
 
-### 🫠 Sorun Giderme
+# 🫠 Sorun Giderme
 
 - [#1: ImmortalWRT kurulumu sonrası internet bağlantı sorunu](https://github.com/frudotz/openwrt-xiaomi-ax3200/issues/1)
 - [#2: ImmortalWRT hantal opkg paket sunucuları](https://github.com/frudotz/openwrt-xiaomi-ax3200/issues/2)
